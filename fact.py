@@ -1,5 +1,5 @@
 #This program calculates the factorial of a given number
-
+import sys
 def factorial(number):
     '''This function calculates the factorial of a number'''
     if number == 1 or number == 0:
@@ -16,6 +16,6 @@ def factorial_without_recursion(number):
     print(fact)
 
 if __name__ == '__main__':
-    userInput = int(input('Enter the number to find its factorial: '))
+    userInput = int(sys.argv[0])
     print('Factorial of', userInput, 'is:', factorial(userInput))
     factorial_without_recursion(userInput)
