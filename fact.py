@@ -16,6 +16,5 @@ def factorial_without_recursion(number):
     print(fact)
 
 if __name__ == '__main__':
-    userInput = int(sys.argv[0])
+    userInput = int(sys.argv[1])
     print('Factorial of', userInput, 'is:', factorial(userInput))
-    factorial_without_recursion(userInput)
